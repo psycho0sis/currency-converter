@@ -1,6 +1,6 @@
 # currency-converter
 
-made with React
+It's a currency converter which made with React
 
 `Deploy:` https://react-app-currency-converter.netlify.app/
 
