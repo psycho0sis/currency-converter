@@ -5,14 +5,14 @@ import Currency from "../Currency";
 import "./style.scss";
 
 const ListOfCurrency = ({ currency, data, current }) => {
-  const currencies = data.map((item, index) => (
+  const currencies = data.map((item, i) => (
     <Currency
-      text={data[index].Cur_Abbreviation}
-      key={data[index].Cur_ID}
-      data={data[index]}
+      text={item.Cur_Abbreviation}
+      key={item.Cur_ID}
+      data={item}
       current={current}
-      img={currency[data[index].Cur_Abbreviation.toLowerCase()].img}
-      value={+currency[data[index].Cur_Abbreviation.toLowerCase()].value}
+      img={currency[data[i].Cur_Abbreviation.toLowerCase()].img}
+      value={+currency[data[i].Cur_Abbreviation.toLowerCase()].value}
       currency={currency}
     />
   ));
